@@ -14,47 +14,49 @@ import Image from "next/image";
 const projects = [
     {
         num: "01",
-        category: "frontend",
-        title: "project 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nulla!",
+        category: "Fullstack",
+        title: "Barcode Display Product",
+        description: "Developed a website to simplify the process of generating barcodes based on field case studies, enhancing efficiency and user experience.",
         stack: [
-            { name: "Html 5" },
-            { name: "CSS 3" },
-            { name: "Javascript" },
+            { name: "Laravel" },
+            { name: "Bootstrap" },
+            { name: "JavaScript" },
+            { name: "MySQL" },
         ],
-        image: "/assets/work/thumb1.jpg",
-        live: "",
-        github: "",
+        image: "/assets/work/thumb1.png",
+        live: "https://codeeko.me/login",
+        github: "https://github.com/chochocookies/itt-display-product",
     },
     {
         num: "02",
-        category: "backend",
-        title: "project 2",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nulla!",
+        category: "Fullstack",
+        title: "Anime List",
+        description: "Created a platform to help users discover popular anime and find recommendations, inspired by personal difficulties in selecting anime.",
         stack: [
-            { name: "Html 5" },
-            { name: "CSS 3" },
-            { name: "Javascript" },
+            { name: "ReactJs" },
+            { name: "TailwindCss" },
+            { name: "NextJs" },
         ],
-        image: "/assets/work/thumb1.jpg",
-        live: "",
-        github: "",
+        image: "/assets/work/thumb2.png",
+        live: "https://eanime-list.vercel.app/",
+        github: "https://github.com/chochocookies/anime-list",
     },
     {
         num: "03",
-        category: "fullstack",
-        title: "project 3",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nulla!",
+        category: "Frontend",
+        title: "Kedai Kopi",
+        description: "Developed a frontend project for a coffee shop with integrated payment methods using Midtrans, offering a seamless user experience.",
         stack: [
-            { name: "Html 5" },
-            { name: "CSS 3" },
-            { name: "Javascript" },
+            { name: "HTML5" },
+            { name: "CSS3" },
+            { name: "JavaScript" },
         ],
-        image: "/assets/work/thumb1.jpg",
-        live: "",
-        github: "",
+        image: "/assets/work/thumb3.png",
+        live: "https://kedai-ngopi-lah.vercel.app/",
+        github: "https://github.com/chochocookies/kedai-ngopi-lah",
     },
 ];
+
 
 const Work = () => {
     const [project, setProject] = useState(projects[0]);
@@ -95,7 +97,7 @@ const Work = () => {
                         {/* buttons */}
                         <div className="flex items-center gap-4 mt-2">
                             {/* live project button */}
-                            <Link href={project.live}>
+                            <Link href={project.live} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
@@ -112,7 +114,7 @@ const Work = () => {
                                 </TooltipProvider>
                             </Link>
                             {/* github project button */}
-                            <Link href={project.github}>
+                            <Link href={project.github} target="_blank">
                                 <TooltipProvider delayDuration={100}>
                                     <Tooltip>
                                         <TooltipTrigger asChild>
@@ -136,7 +138,7 @@ const Work = () => {
                             showStatus={false}
                             infiniteLoop={true}
                             autoPlay={true}
-                            interval={10000}
+                            interval={5000}
                             onChange={handleSlideChange}
                         >
                             {projects.map((project, index) => {

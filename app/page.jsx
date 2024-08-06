@@ -25,7 +25,8 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Fullstack Developer</span>
             <h1 className="h2 mb-6">
-              Hello I`m <br /><span className="text-accent">Eko Aryanto</span>
+              Hello I`m <br />
+              <span className="text-accent">Eko Aryanto</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
             I specialize in building dynamic and responsive web applications using the latest technologies such as HTML, CSS, JavaScript, and various frameworks such as React and Node.js. developer, I`d love to hear from you!
