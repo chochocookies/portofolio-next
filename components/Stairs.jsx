@@ -22,7 +22,7 @@ const reverseIndex = (index) => {
 const Stairs = () => {
     return (
         <>
-            {/* rendr 6 motion divs, each representing a step of the stars. 
+            {/* render 6 motion divs, each representing a step of the stars. 
             Each div will have the same animation defined by the stairsAnimation object.
             The delay for each div is calculated dinamicly base  on it's reversed index, creating a staggered effect with decreasing delay for each subsequent step. */}
             {[...Array(6)].map((_, index) => {
